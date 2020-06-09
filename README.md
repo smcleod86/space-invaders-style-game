@@ -13,7 +13,8 @@ Canvas
 
 
 ## Initial Wireframes
-<https://scott772250.invisionapp.com/freehand/Project-1-Wireframes-bduCPk72R>
+![Start Screen](./imgs/wireframe1.png)
+![Game Screen](./imgs/wireframe2.png)
 
 
 ## MVP
