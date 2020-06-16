@@ -101,7 +101,7 @@ function endGame() {
 }
 
 function gameLoop() {
-    setInterval(gameLoop, 50)
+    setTimeout(gameLoop, 50)
     moveMissiles()
     drawMissiles()
     moveEnemies()

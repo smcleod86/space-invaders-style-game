@@ -1,15 +1,15 @@
-### Project 1
+### Project 1 "Get the Poo"
 
 ## Space Invaders style game
-I would like to build a Space Invaders style game in which a user will control an object, with the ability to move side to side (probably using "a" and "d" buttons but maybe arrows). The user will use space bar to launch a projectile at “enemy” object that will be moving downwards from the top of the screen. The player must hit all enemies with projectiles before enemies reach the bottom of the playing area. If the enemies hit the player, or reach the bottom of the playing area, the player will lose one life, the enemies will restart at the top of the sceeen. When player lives reaches zero, a end game screen will be triggered that will display an endgame message, display the players score, as well a button to restart the game. 
-I haven’t yet thought of a theme to take it away from Space Invaders, but I’m stewing on it.
+Welcome to my Space Invaders styled game, called "**Get the Poo**". For our Project 1 I was interested in building a Space Invaders style game to test my HTML, CSS, and JS abilities. Part way through the project I was in the backyard taking a fresh air break, and I had the distinct pleasure of stepping in some faily fresh dog poo. Initially I was pretty irritated, but decided I was going to try to focus that energy into a theme for my game.
+
+In "**Get the Poo**", as the player is enjoying a sunny afternoon lounging in the grass, they can't help but notice a swarm of smiling dog poos throughout the grass. It's going to be tricky not to get hit by the poo. With the aid of the **"a"** and **"d" buttons** on the the keyboard, the player controls a Mickey Mouse styled hand at the bottom of the screen, moving the hand from left to right. With a steady hand and firm grip, the user must deploy poop bags, using the **space bar** at the attacking poos in hopes that thier shoes may live to see another day.
 
 
 ## Tech:
 HTML
 CSS
 Javascript
-Canvas
 
 
 ## Initial Wireframes
