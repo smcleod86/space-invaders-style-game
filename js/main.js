@@ -72,7 +72,7 @@ function drawEnemies() {
 
 function moveEnemies() {
     for (let enemy = 0; enemy < enemies.length; enemy++) {
-        enemies[enemy].top = enemies[enemy].top + 5
+        enemies[enemy].top = enemies[enemy].top + 1
     }
 }
 
@@ -117,9 +117,6 @@ function gameLoop() {
     drawEnemies()
     collisionDetection()
 }
-
-//init()
-//gameLoop()
 
 function init() {
     document.getElementById("background").style.visibility = "visible"
