@@ -21,6 +21,12 @@ var enemies = [
     {left: 550, top: 80}   
 ]
 
+var score = 0
+
+/* -------------------------- Event Listeners -------------------------- */
+
+
+
 /* -------------------------- Functions -------------------------- */
 document.onkeydown = function(e) {
     if (e.keyCode === 65) {     // "a" button
@@ -82,7 +88,7 @@ function collisionDetection() {
             ){
                 enemies.splice(enemy, 1)
                 missiles.splice(missile, 1)
-                //score++
+                score++
             }
         }
     if (
@@ -90,9 +96,9 @@ function collisionDetection() {
         (hero.top > enemies[enemy].top) &&
         (hero.left >= enemies[enemy].left) &&
         (hero.left <= enemies[enemy].left + 50)
-    ){
-        endGame()
-    }
+        ){
+            endGame()
+        }
     }
 }
 
@@ -110,3 +116,7 @@ function gameLoop() {
 }
 
 gameLoop()
+
+function init() {
+    document.
+}
