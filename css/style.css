@@ -1,7 +1,42 @@
-body {
-    background-color: black;
+#background {
+    background-image: url("../imgs/grass-background.png");
+    height: 800px;
+    width: 1200px;
 }
 
-h1 {
-    color: red;
+#hero {
+    background-image: url("../imgs/pointing.png");
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 700px;
+    left: 550px;
+}
+
+#missles {
+    height: 800px;
+    width: 1200px;
+    position: absolute;
+}
+
+.enemy {
+    background-image: url("http://www.placekitten.com/50/50");
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 100px;
+    left: 550px;
+}
+
+.missile {
+    background-image: url("http://www.placekitten.com/20/20");
+    height: 16px;
+    width: 10px;
+    position: absolute;
+}
+
+#enemies {
+    height: 800px;
+    width: 1200px;
+    position: absolute;
 }
