@@ -23,6 +23,7 @@ var enemies = [
 
 var score = 0
 
+
 /* -------------------------- Event Listeners -------------------------- */
 
 
@@ -117,6 +118,6 @@ function gameLoop() {
 
 gameLoop()
 
-function init() {
-    document.
-}
+// function init() {
+//     document.
+// }
