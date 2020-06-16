@@ -1,45 +1,42 @@
+/* -------------------------- Variables -------------------------- */
 var hero = {
     top: 690,
-    left: 350
+    left: 310
 }
 
 var missiles = []
 
 var enemies = [
-    { left: 300, top: 100 },
-    { left: 400, top: 100 },
-    { left: 500, top: 100 },
-    { left: 600, top: 100 },
-    { left: 700, top: 100 },
-    { left: 800, top: 100 },
-    { left: 300, top: 175 },
-    { left: 400, top: 175 },
-    { left: 500, top: 175 },
-    { left: 600, top: 175 },
-    { left: 700, top: 175 },
-    { left: 800, top: 175 }
-    
+    {left: 50, top: 10},
+    {left: 150, top: 10},
+    {left: 250, top: 10},
+    {left: 350, top: 10},
+    {left: 450, top: 10},
+    {left: 550, top: 10},
+    {left: 50, top: 80},
+    {left: 150, top: 80},
+    {left: 250, top: 80},
+    {left: 350, top: 80},
+    {left: 450, top: 80},
+    {left: 550, top: 80}   
 ]
 
+/* -------------------------- Functions -------------------------- */
 document.onkeydown = function(e) {
-    console.log(e.keyCode)
-
-    if (e.keyCode === 65) {
+    if (e.keyCode === 65) {     // "a" button
         hero.left = hero.left - 10;
         moveHero()
     }
-    else if (e.keyCode === 68) {
+    else if (e.keyCode === 68) {    // "d" button
         hero.left = hero.left + 10;
         moveHero()
     }
-    else if (e.keyCode === 32) {
-        console.log("fire")
+    else if (e.keyCode === 32) {    // space bar
         missiles.push({
             left: hero.left + 15,
             top: hero.top
         })
         drawMissiles()
-        console.log()
     }
 }
 
@@ -57,21 +54,20 @@ function drawMissiles() {
 
 function moveMissiles() {
     for (let missile = 0; missile < missiles.length; missile++) {
-        missiles[missile].top = missiles[missile].top - 5
+        missiles[missile].top = missiles[missile].top - 12
     }
 }
 
 function drawEnemies() {
     document.getElementById("enemies").innerHTML = ""
     for (let enemy = 0; enemy < enemies.length; enemy++) {
-        document.getElementById("enemies").innerHTML += 
-        `<div class="enemy" style="left:${enemies[enemy].left}px; top:${enemies[enemy].top}px;"</div>`
+        document.getElementById("enemies").innerHTML += `<div class="enemy" style="left:${enemies[enemy].left}px; top:${enemies[enemy].top}px;"</div>`
     }
 }
 
 function moveEnemies() {
     for (let enemy = 0; enemy < enemies.length; enemy++) {
-        enemies[enemy].top = enemies[enemy].top + 3
+        enemies[enemy].top = enemies[enemy].top + 1
     }
 }
 
@@ -84,12 +80,24 @@ function collisionDetection() {
             (missiles[missile].left >= enemies[enemy].left) &&
             (missiles[missile].left <= enemies[enemy].left + 50)
             ){
-                console.log("hit!")
                 enemies.splice(enemy, 1)
-                missiles.splice(missile), 1
+                missiles.splice(missile, 1)
+                //score++
             }
         }
+    if (
+        (hero.top <= enemies[enemy].top + 50) && 
+        (hero.top > enemies[enemy].top) &&
+        (hero.left >= enemies[enemy].left) &&
+        (hero.left <= enemies[enemy].left + 50)
+    ){
+        endGame()
     }
+    }
+}
+
+function endGame() {
+    clearInterval(gameLoop)
 }
 
 function gameLoop() {
