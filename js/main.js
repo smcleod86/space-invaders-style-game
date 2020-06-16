@@ -27,6 +27,14 @@ document.getElementById('restartButton').addEventListener('click', init)
 document.getElementById("start").addEventListener("click", init)
 
 /* -------------------------- Functions -------------------------- */
+function init() {
+    document.getElementById("background").style.visibility = "visible"
+    document.getElementById("instructionScreen").style.visibility = "hidden"
+    document.getElementById("prompt").style.visibility = "hidden"
+    gameLoop()
+    
+}
+
 document.onkeydown = function(e) {
     if (e.keyCode === 65) {     // "a" button
         hero.left = hero.left - 10;
@@ -72,7 +80,7 @@ function drawEnemies() {
 
 function moveEnemies() {
     for (let enemy = 0; enemy < enemies.length; enemy++) {
-        enemies[enemy].top = enemies[enemy].top + 1.1
+        enemies[enemy].top = enemies[enemy].top + 1
     }
 }
 
@@ -87,7 +95,7 @@ function collisionDetection() {
             ){
                 enemies.splice(enemy, 1)
                 missiles.splice(missile, 1)
-                score++
+                //score++
             }
         }
     if (
@@ -103,13 +111,9 @@ function collisionDetection() {
 
 function endGame() {
     enemies = []
-    //document.getElementById('prompt').textContent = "GAME OVER"
     document.getElementById("background").style.visibility = "hidden"
     document.getElementById("instructionScreen").style.visibility = "hidden"
     document.getElementById("prompt").style.visibility = "visible"
-    //clearInterval(gameLoop)
-    //alert("You have lost")
-
 }
 
 function gameLoop() {
@@ -119,14 +123,6 @@ function gameLoop() {
     moveEnemies()
     drawEnemies()
     collisionDetection()
-}
-
-function init() {
-    document.getElementById("background").style.visibility = "visible"
-    document.getElementById("instructionScreen").style.visibility = "hidden"
-    document.getElementById("prompt").style.visibility = "hidden"
-    gameLoop()
-    
 }
 
 gameLoop()
