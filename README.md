@@ -1,9 +1,9 @@
 ### Project 1 "Get the Poo"
 
 ## Space Invaders style game
-Welcome to my Space Invaders styled game, called "**Get the Poo**". For our Project 1 I was interested in building a Space Invaders style game to test my HTML, CSS, and JS abilities. Part way through the project I was in the backyard taking a fresh air break, and I had the distinct pleasure of stepping in some faily fresh dog poo. Initially I was pretty irritated, but decided I was going to try to focus that energy into a theme for my game.
+Welcome to my Space Invaders styled game, called "_**Get the Poo**_". For our Project 1 I was interested in building a Space Invaders style game to test my HTML, CSS, and JS abilities. Part way through the project I was in the backyard taking a fresh air break, and I had the distinct pleasure of stepping in some faily fresh dog poo. Initially I was pretty irritated, but decided I was going to try to focus that energy into a theme for my game.
 
-In "**Get the Poo**", as the player is enjoying a sunny afternoon lounging in the grass, they can't help but notice a swarm of smiling dog poos throughout the grass. It's going to be tricky not to get hit by the poo. With the aid of the **"a"** and **"d" buttons** on the the keyboard, the player controls a Mickey Mouse styled hand at the bottom of the screen, moving the hand from left to right. With a steady hand and firm grip, the user must deploy poop bags, using the **space bar** at the attacking poos in hopes that thier shoes may live to see another day.
+In "_**Get the Poo**_", as the player is enjoying a sunny afternoon lounging in the grass, they can't help but notice a swarm of smiling dog poos throughout the grass. It's going to be tricky not to get hit by the poo. With the aid of the **"a"** and **"d" keys** on the the keyboard, the player controls a Mickey Mouse styled hand at the bottom of the screen, moving the hand from left to right. With a steady hand and firm grip, the user must deploy poop bags, using the _**space bar**_ at the attacking poos in hopes that thier shoes may live to see another day.
 
 
 ## Tech:
