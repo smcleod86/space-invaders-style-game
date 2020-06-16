@@ -18,6 +18,17 @@
     visibility: visible;
 }
 
+#prompt {
+    background-image: url("../imgs/background-image.png");
+    height: 750px;
+    width: 650px;
+    position: absolute;
+    border: 5px solid black;
+    text-align: center;
+    visibility: hidden;
+}
+
+
 #hero {
     background-image: url("../imgs/hero-image.png");
     height: 60px;
@@ -58,6 +69,12 @@
 .containers {
     background-color: rgba(126, 214, 96, 0.836);
     padding: 0 75px 0 75px;
+}
+
+.endGame {
+    background-color: rgba(126, 214, 96, 0.836);
+    padding: 0 75px 0 75px;
+    text-align: center;
 }
 
 h1, h3, h4 {
