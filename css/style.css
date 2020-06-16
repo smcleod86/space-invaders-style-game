@@ -1,26 +1,27 @@
 #background {
-    background-image: url("../imgs/grass-background.png");
-    height: 800px;
-    width: 1200px;
+    background-image: url("../imgs/background-image.png");
+    height: 750px;
+    width: 700px;
+    border: 5px solid black;
 }
 
 #hero {
-    background-image: url("../imgs/pointing.png");
-    height: 50px;
+    background-image: url("../imgs/hero-image.png");
+    height: 60px;
     width: 50px;
     position: absolute;
-    top: 700px;
-    left: 550px;
+    top: 690px;
+    left: 350px;
 }
 
 #missles {
-    height: 800px;
-    width: 1200px;
+    height: 750px;
+    width: 700px;
     position: absolute;
 }
 
 .enemy {
-    background-image: url("http://www.placekitten.com/50/50");
+    background-image: url("../imgs/enemy-image.png");
     height: 50px;
     width: 50px;
     position: absolute;
@@ -29,14 +30,14 @@
 }
 
 .missile {
-    background-image: url("http://www.placekitten.com/20/20");
-    height: 16px;
-    width: 10px;
+    background-image: url("../imgs/missile-image.png");
+    height: 50px;
+    width: 50px;
     position: absolute;
 }
 
 #enemies {
-    height: 800px;
-    width: 1200px;
+    height: 700px;
+    width: 750px;
     position: absolute;
 }
