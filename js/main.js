@@ -22,11 +22,9 @@ var enemies = [
 ]
 
 var score = 0
-
-
 /* -------------------------- Event Listeners -------------------------- */
 
-
+document.getElementById("start").addEventListener("click", init)
 
 /* -------------------------- Functions -------------------------- */
 document.onkeydown = function(e) {
@@ -74,7 +72,7 @@ function drawEnemies() {
 
 function moveEnemies() {
     for (let enemy = 0; enemy < enemies.length; enemy++) {
-        enemies[enemy].top = enemies[enemy].top + 1
+        enemies[enemy].top = enemies[enemy].top + 5
     }
 }
 
@@ -104,7 +102,11 @@ function collisionDetection() {
 }
 
 function endGame() {
-    clearInterval(gameLoop)
+    enemies = []
+    console.log("hitting end game")
+    //clearInterval(gameLoop)
+    //alert("You have lost")
+
 }
 
 function gameLoop() {
@@ -116,8 +118,11 @@ function gameLoop() {
     collisionDetection()
 }
 
-gameLoop()
+//init()
+//gameLoop()
 
-// function init() {
-//     document.
-// }
+function init() {
+    document.getElementById("background").style.visibility = "visible"
+    document.getElementById("instructionScreen").style.visibility = "hidden"
+    gameLoop()
+}
