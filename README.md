@@ -42,5 +42,5 @@ Javascript
 5. Additional animations on enemy destruction and player fail.
 
 ## Resources
-[Free transparent png's](https://www.stickpng.com/)
-[Lots of](https://developer.mozilla.org/en-US/)
+Free transparent png's: (https://www.stickpng.com/)
+Lots of Mozilla Web Dev: (https://developer.mozilla.org/en-US/)
