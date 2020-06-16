@@ -103,6 +103,7 @@ function collisionDetection() {
 
 function endGame() {
     enemies = []
+    document.getElementById('prompt').textContent = "GAME OVER"
     console.log("hitting end game")
     //clearInterval(gameLoop)
     //alert("You have lost")

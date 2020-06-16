@@ -40,3 +40,7 @@ Javascript
 3. As player progresses, incease number of enemies on the screen. 
 4. Track and log high scores.
 5. Additional animations on enemy destruction and player fail.
+
+## Resources
+[Free transparent png's](https://www.stickpng.com/)
+[Lots of](https://developer.mozilla.org/en-US/)
